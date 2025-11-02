@@ -1,0 +1,66 @@
+En este caso, se espera obtener:
+SOLUCIÓN PROBLEMA ÁRBOLES COMPLEMENTARIOS CON PODA ÓPTIMA
+Se construyen los árboles de la foto del tablero
+Hojas originales, sin poda:
+Árbol 1: [8, 12, 10, 1, 2, -1] (con 6 hojas)
+Árbol 2: [2, -1, 5] (con 3 hojas)
+Los árboles NO son complementarios, se requiere poda.
+Buscando poda óptima
+GENERANDO LAS PODAS POSIBLES
+Podas del árbol 1:
+Total de podas generadas: 63
+Podas del árbol 2:
+Total de podas generadas: 13
+COMPARANDO LAS COMBINACIONES
+Total de combinaciones a evaluar: 819
+
+ Solución 1, con 1 hojas: [5]
+Árbol 1: POdar ambos hijos de la ra├¡z, o sea convertirla en hoja
+Árbol 2: Podar izq. de raíz->der (con izq. ya podado)
+Solución encontrada con 1 hojas: [5]
+Árbol 1: POdar ambos hijos de la ra├¡z, o sea convertirla en hoja
+Árbol 2: Podar izq. de raíz->der (con izq. ya podado)
+
+ Solución 2, con 1 hojas: [5]
+Árbol 1: Podar ambos de raíz
+Árbol 2: Podar izq. de raíz->der (con izq. ya podado)
+
+ Solución 3, con 1 hojas: [-1]
+Árbol 1: Podar izq. de raíz->der (con izq. ya podado)
+Árbol 2: Podar der. de raíz->der (con izq. ya podado)
+
+ Solución 4, con 2 hojas: [2, -1]
+Árbol 1: Podar izq. de raíz->der (con izq. ya podado)->izq->der (con izq. ya podado)
+Árbol 2: Podar der. de raíz->right
+Solución encontrada con 2 hojas: [2, -1]
+Árbol 1: Podar izq. de raíz->der (con izq. ya podado)->izq->der (con izq. ya podado)
+Árbol 2: Podar der. de raíz->right
+
+ Solución 5, con 1 hojas: [4]
+Árbol 1: Podar ambos de raíz->der (con izq. ya podado)
+Árbol 2: Podar ambos de raíz->der (con izq. ya podado)
+
+ Solución 6, con 1 hojas: [2]
+Árbol 1: Podar izq. de raíz->der (con izq. ya podado)->izq (con der. ya podado)->der (con izq. ya podado)
+Árbol 2: Podar hijo der. de la raíz
+
+ Solución 7, con 1 hojas: [2]
+Árbol 1: Podar izq. de raíz->der (con izq. ya podado)->izq (con der. ya podado)->der (con izq. ya podado)
+Árbol 2: Podar der. de raíz
+
+ Solución 8, con 1 hojas: [6]
+Árbol 1: Podar ambos de raíz->der (con izq. ya podado)->izq (con der. ya podado)->der (con izq. ya podado)
+Árbol 2: POdar ambos hijos de la raíz, o sea convertirla en hoja
+
+ Solución 9, con 1 hojas: [6]
+Árbol 1: Podar ambos de raíz->der (con izq. ya podado)->izq (con der. ya podado)->der (con izq. ya podado)
+Árbol 2: Podar ambos de raíz
+Total de soluciones complementarias encontradas: 9
+La óptima, es decir la de más hojas, tiene 2 hojas
+RESULTADO FINAL:
+Solución óptima encontrada :)
+Máximo número de hojas complementarias: 2
+Hojas resultantes: [2, -1]
+Podas necesarias:
+Árbol 1: Podar izq. de raíz->der (con izq. ya podado)->izq->der (con izq. ya podado)
+Árbol 2: Podar der. de raíz->right
